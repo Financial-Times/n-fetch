@@ -7,8 +7,8 @@
   "license": "ISC",
   "dependencies": {
     "@financial-times/n-logger": "^5.5.3",
-    "fetch-ponyfill": "^4.0.0",
-    "http-errors": "^1.6.1"
+    "http-errors": "^1.6.1",
+    "node-fetch": "^1.6.3"
   },
   "devDependencies": {
     "@financial-times/next-secrets": "^1.1.0",
@@ -18,7 +18,9 @@
     "mocha": "^3.2.0",
     "npm-prepublish": "^1.2.2",
     "pre-git": "^3.14.0",
-    "proxyquire": "^1.7.11"
+    "proxyquire": "^1.7.11",
+    "sinon": "^2.2.0",
+    "sinon-chai": "^2.10.0"
   },
   "config": {
     "pre-git": {
