@@ -9,7 +9,7 @@ Additional features:
 
 ## Requirements
 
-* Node 8.10.x
+* Node version defined by `engines.node` in `package.json`. Run command `nvm use` to switch your local Node version to the one specified in `.nvmrc`.
 
 
 ## Installation
