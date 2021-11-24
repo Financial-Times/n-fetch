@@ -8,7 +8,7 @@
   "dependencies": {
     "@financial-times/n-logger": "^8.0.0",
     "http-errors": "^1.6.1",
-    "node-fetch": "^2.0.0"
+    "node-fetch": "^2.6.6"
   },
   "devDependencies": {
     "@financial-times/n-gage": "^8.3.2",
