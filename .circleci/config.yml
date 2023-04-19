@@ -40,7 +40,7 @@ workflows:
           name: tool-kit/build-v<< matrix.node-version >>
           matrix:
             parameters:
-              node-version: [ "16.14", "14.19" ]
+              node-version: [ "16.14" ]
           filters:
             tags:
               only: /^v\d+\.\d+\.\d+(-.+)?/
@@ -50,7 +50,7 @@ workflows:
           name: tool-kit/test-v<< matrix.node-version >>
           matrix:
             parameters:
-              node-version: [ "16.14", "14.19" ]
+              node-version: [ "16.14" ]
           filters:
             tags:
               only: /^v\d+\.\d+\.\d+(-.+)?/
@@ -59,7 +59,6 @@ workflows:
           context: npm-publish-token
           requires:
             - tool-kit/test-v16.14
-            - tool-kit/test-v14.19
           filters:
             branches:
               ignore: /.*/
@@ -85,11 +84,11 @@ workflows:
           name: tool-kit/build-v<< matrix.node-version >>
           matrix:
             parameters:
-              node-version: [ "16.14", "14.19" ]
+              node-version: [ "16.14" ]
       - tool-kit/test:
           requires:
             - tool-kit/build-v<< matrix.node-version >>
           name: tool-kit/test-v<< matrix.node-version >>
           matrix:
             parameters:
-              node-version: [ "16.14", "14.19" ]
+              node-version: [ "16.14" ]
