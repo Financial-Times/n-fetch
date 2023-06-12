@@ -20,7 +20,7 @@
     "dotcom-tool-kit": "^3.2.0",
     "eslint": "^8.30.0",
     "mocha": "^10.2.0",
-    "nock": "^9.2.3",
+    "nock": "^13.3.1",
     "proxyquire": "^1.7.11",
     "sinon": "^4.4.0",
     "snyk": "^1.167.2"
@@ -28,7 +28,7 @@
   "scripts": {
     "prepare": "npx snyk protect || npx snyk protect -d || true",
     "build": "dotcom-tool-kit build:local",
-    "test": "dotcom-tool-kit test:local",
+    "test": "NODE_OPTIONS='--no-experimental-fetch' dotcom-tool-kit test:local",
     "start": "dotcom-tool-kit run:local"
   },
   "engines": {
