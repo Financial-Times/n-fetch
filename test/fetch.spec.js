@@ -12,7 +12,7 @@ const stubs = {
 };
 
 const fetch = proxyquire('../fetch', {
-	'@financial-times/n-logger': { default: stubs.logger }
+	'@dotcom-reliability-kit/logger': stubs.logger
 });
 
 describe('fetch', () => {

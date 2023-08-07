@@ -1,4 +1,4 @@
-const logger = require('@financial-times/n-logger').default;
+const logger = require('@dotcom-reliability-kit/logger');
 const nodeFetch = require('node-fetch');
 const httpError = require('http-errors');
 
