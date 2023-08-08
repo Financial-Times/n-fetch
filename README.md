@@ -4,7 +4,7 @@ This package is a wrapper for [node-fetch](https://www.npmjs.com/package/node-fe
 
 Additional features:
 - If the resouce returns JSON, then the response will be sent as JSON automatically
-- Errors are logged to the console using [n-logger](https://github.com/Financial-Times/n-logger)
+- Errors are logged to the console using [Reliability Kit logger](https://github.com/Financial-Times/dotcom-reliability-kit/tree/main/packages/logger#readme)
 
 
 ## Requirements

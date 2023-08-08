@@ -6,7 +6,7 @@
   "main": "fetch.js",
   "license": "ISC",
   "dependencies": {
-    "@financial-times/n-logger": "^10.2.0",
+    "@dotcom-reliability-kit/logger": "^2.2.7",
     "http-errors": "^1.6.1",
     "node-fetch": "^2.0.0"
   },
