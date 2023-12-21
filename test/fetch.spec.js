@@ -1,7 +1,7 @@
+const assert = require('node:assert/strict');
 const proxyquire = require('proxyquire');
 const nock = require('nock');
 const sinon = require('sinon');
-const { expect } = require('chai');
 
 const sandbox = sinon.createSandbox();
 
@@ -28,7 +28,7 @@ describe('fetch', () => {
 				.reply(200, { foo: 'bar' });
 
 			return fetch('https://www.teddy.com/status-json').then((data) => {
-				expect(data).to.deep.equal({ foo: 'bar' });
+				assert.deepEqual(data, { foo: 'bar' });
 			});
 		});
 
@@ -38,7 +38,7 @@ describe('fetch', () => {
 				.reply(200, 'foo=bar');
 
 			return fetch('https://www.teddy.com/status-text').then((data) => {
-				expect(data).to.deep.equal('foo=bar');
+				assert.equal(data, 'foo=bar');
 			});
 		});
 	});
@@ -57,8 +57,8 @@ describe('fetch', () => {
 					throw new Error('This should not be called');
 				})
 				.catch((error) => {
-					expect(error.name).to.equal('InternalServerError');
-					expect(error.message).to.equal('Oh dear!');
+					assert.equal(error.name, 'InternalServerError');
+					assert.equal(error.message, 'Oh dear!');
 				})
 		));
 
