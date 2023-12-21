@@ -6,9 +6,9 @@
   "main": "fetch.js",
   "license": "ISC",
   "dependencies": {
-    "@dotcom-reliability-kit/logger": "^2.2.7",
-    "http-errors": "^1.6.1",
-    "node-fetch": "^2.0.0"
+    "@dotcom-reliability-kit/logger": "^2.4.2",
+    "http-errors": "^2.0.0",
+    "node-fetch": "^2.7.0"
   },
   "devDependencies": {
     "@dotcom-tool-kit/component": "^3.1.7",
