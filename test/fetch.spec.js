@@ -3,7 +3,7 @@ const nock = require('nock');
 const sinon = require('sinon');
 const { expect } = require('chai');
 
-const sandbox = sinon.sandbox.create();
+const sandbox = sinon.createSandbox();
 
 const stubs = {
 	logger: {
