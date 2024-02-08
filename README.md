@@ -1,3 +1,8 @@
+> [!WARNING]<br />
+> n-fetch has been deprecated as of **2024-02-08**. It will reach end-of-life on **2024-07-01** at which point no further security patches will be applied. The library will continue to work in currently-supported versions of Node.js but **it should not be used in new projects**.
+>
+> [Further information is available in this blog post](https://financialtimes.atlassian.net/l/cp/Mde8hutd).
+
 # n-fetch [![CircleCI](https://circleci.com/gh/Financial-Times/n-fetch.svg?style=svg&circle-token=33bcf2eb98fe2e875cc66de93d7e4a50369c952d)](https://github.com/Financial-Times/n-fetch)
 
 This package is a wrapper for [node-fetch](https://www.npmjs.com/package/node-fetch) and provides an interface for fetching resources server side.
